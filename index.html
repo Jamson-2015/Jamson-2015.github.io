@@ -16,7 +16,6 @@
       </div>
       <nav class="nav">
         <a href="#reisen">Reisen</a>
-        <a href="#bilder">Bilder</a>
         <a href="#dokumente">Dokumente</a>
       </nav>
     </div>
@@ -35,46 +34,36 @@
 
     <div class="grid">
       <section class="card">
-        <h2>📍 Aktuelles</h2>
+        <h2>🧭 Reisen</h2>
+
         <div class="section">
-  <h3>Reisen</h3>
+          <h3>Übersicht</h3>
 
-  <div class="gallery">
-    <a class="thumb" href="suedafrika.html">
-      <img src="images/IMG_9256.JPEG" alt="Südafrika">
-      <span>Südafrika</span>
-    </a>
-  </div>
-</div>
-
-        <p style="margin:0;color:var(--muted);line-height:1.6;">
-          Hier kannst du kurze Notizen zur letzten Reise schreiben: Zeitraum, Ort, Highlights.
-          (Später können wir auch eine zweite Seite pro Reise machen.)
-        </p>
-
-        <div class="section" id="bilder">
-          <h3>Bilder (Beispiel-Galerie)</h3>
           <div class="gallery">
-            <!-- Ersetze die Platzhalter mit echten Bildern aus /images -->
-            <a class="thumb" href="#">
-              <div>Bild 1</div>
-              <!-- Beispiel: <img src="images/italien-01.jpg" alt="Italien" /> -->
-              <span>Platzhalter</span>
+            <a class="thumb" href="suedafrika.html">
+              <img src="images/IMG_9256.JPEG" alt="Südafrika">
+              <span>Südafrika</span>
             </a>
-            <a class="thumb" href="#"><div>Bild 2</div><span>Platzhalter</span></a>
-            <a class="thumb" href="#"><div>Bild 3</div><span>Platzhalter</span></a>
-            <a class="thumb" href="#"><div>Bild 4</div><span>Platzhalter</span></a>
           </div>
-          <p style="margin:12px 0 0;color:var(--muted);font-size:.95rem;">
-            Tipp: Lege einen Ordner <b>images</b> an und lade Fotos dort hoch. Dann trägst du sie hier als <code>&lt;img&gt;</code> ein.
+
+          <p style="margin:12px 0 0;color:var(--muted);font-size:.95rem;line-height:1.6;">
+            Tipp: Für jede neue Reise kannst du eine eigene Seite erstellen (z. B. <code>italien.html</code>) und hier als Kachel verlinken.
+          </p>
+        </div>
+
+        <div class="section">
+          <h3>Aktuelles</h3>
+          <p style="margin:0;color:var(--muted);line-height:1.6;">
+            Hier kannst du kurze Notizen zur letzten Reise schreiben: Zeitraum, Ort, Highlights.
+            (Später können wir auch eine Seite pro Reise mit Text + Dokumenten bauen.)
           </p>
         </div>
       </section>
 
       <aside class="card" id="dokumente">
         <h2>📄 Dokumente</h2>
+
         <div class="list">
-          <!-- Beispiele – später ersetzen mit echten PDFs in /docs -->
           <div class="item">
             <div>
               <div><b>Reiseplan (PDF)</b></div>
@@ -96,9 +85,9 @@
           <h3>Wie du Dateien hinzufügst</h3>
           <ol style="margin:0;padding-left:18px;color:var(--muted);line-height:1.7;">
             <li>Im Repo: <b>Add file</b> → <b>Upload files</b></li>
-            <li>Für PDFs: Ordner <b>docs</b> (z. B. docs/reiseplan.pdf)</li>
+            <li>Für PDFs: Ordner <b>docs</b> (z. B. <code>docs/reiseplan.pdf</code>)</li>
             <li>Für Bilder: Ordner <b>images</b></li>
-            <li>Links hier im HTML anpassen</li>
+            <li>Links in HTML anpassen</li>
           </ol>
         </div>
       </aside>
