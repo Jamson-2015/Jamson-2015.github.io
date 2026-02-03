@@ -1,20 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Meine erste Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 50px auto;
-      line-height: 1.6;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jamson · Reisen</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hallo 👋</h1>
-  <p>Das ist meine erste eigene Website.</p>
-  <p>Ich habe sie selbst erstellt 😊</p>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div>Jamson</div>
+        <small>Reisen · Fotos · Notizen</small>
+      </div>
+      <nav class="nav">
+        <a href="#reisen">Reisen</a>
+        <a href="#bilder">Bilder</a>
+        <a href="#dokumente">Dokumente</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="hero" id="reisen">
+      <h1>Meine Reisen</h1>
+      <p>
+        Eine schlichte Sammlung aus Bildern und Dokumenten – modern, übersichtlich und nur so komplex wie nötig.
+      </p>
+      <div style="margin-top:18px;">
+        <span class="badge">⬆️ Upload passiert über GitHub (Add file)</span>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2>📍 Aktuelles</h2>
+        <p style="margin:0;color:var(--muted);line-height:1.6;">
+          Hier kannst du kurze Notizen zur letzten Reise schreiben: Zeitraum, Ort, Highlights.
+          (Später können wir auch eine zweite Seite pro Reise machen.)
+        </p>
+
+        <div class="section" id="bilder">
+          <h3>Bilder (Beispiel-Galerie)</h3>
+          <div class="gallery">
+            <!-- Ersetze die Platzhalter mit echten Bildern aus /images -->
+            <a class="thumb" href="#">
+              <div>Bild 1</div>
+              <!-- Beispiel: <img src="images/italien-01.jpg" alt="Italien" /> -->
+              <span>Platzhalter</span>
+            </a>
+            <a class="thumb" href="#"><div>Bild 2</div><span>Platzhalter</span></a>
+            <a class="thumb" href="#"><div>Bild 3</div><span>Platzhalter</span></a>
+            <a class="thumb" href="#"><div>Bild 4</div><span>Platzhalter</span></a>
+          </div>
+          <p style="margin:12px 0 0;color:var(--muted);font-size:.95rem;">
+            Tipp: Lege einen Ordner <b>images</b> an und lade Fotos dort hoch. Dann trägst du sie hier als <code>&lt;img&gt;</code> ein.
+          </p>
+        </div>
+      </section>
+
+      <aside class="card" id="dokumente">
+        <h2>📄 Dokumente</h2>
+        <div class="list">
+          <!-- Beispiele – später ersetzen mit echten PDFs in /docs -->
+          <div class="item">
+            <div>
+              <div><b>Reiseplan (PDF)</b></div>
+              <small>docs/reiseplan.pdf</small>
+            </div>
+            <a class="button" href="docs/reiseplan.pdf" target="_blank" rel="noopener">Öffnen</a>
+          </div>
+
+          <div class="item">
+            <div>
+              <div><b>Notizen</b></div>
+              <small>docs/notizen.pdf</small>
+            </div>
+            <a class="button" href="docs/notizen.pdf" target="_blank" rel="noopener">Öffnen</a>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Wie du Dateien hinzufügst</h3>
+          <ol style="margin:0;padding-left:18px;color:var(--muted);line-height:1.7;">
+            <li>Im Repo: <b>Add file</b> → <b>Upload files</b></li>
+            <li>Für PDFs: Ordner <b>docs</b> (z. B. docs/reiseplan.pdf)</li>
+            <li>Für Bilder: Ordner <b>images</b></li>
+            <li>Links hier im HTML anpassen</li>
+          </ol>
+        </div>
+      </aside>
+    </div>
+
+    <div class="footer">
+      © 2026 · Jamson — schlicht & modern
+    </div>
+  </div>
+
 </body>
 </html>
